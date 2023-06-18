@@ -1,0 +1,32 @@
+package in.ineuron.main;
+
+
+
+public class Practice3 {
+	
+	public static double SquareRoot(double i) {
+        if (i < 0) {
+        System.out.println("Input cann't be negative");
+        System.exit(0);
+        }
+        
+        if (i == 0 || i == 1) {
+            return i;
+        }
+        
+        double root = i / 2;
+        double previous;
+        
+        do {
+            previous = root;
+            root = 0.5 * (previous + i / previous);
+        } while (Math.abs(root - previous) >= 1e-9);
+        
+        return root;
+    }
+
+	public static void main(String[] args) {
+		System.out.println(SquareRoot(-1));
+	}
+
+}
