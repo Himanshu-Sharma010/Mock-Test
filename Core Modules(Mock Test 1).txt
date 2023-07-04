@@ -23,4 +23,92 @@ Q.2
 
 
 
+Q.3
+	int press = 0;
+		
+	do {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println();
+		System.out.println("Press 1 to average");
+		System.out.println("Press 2 to exit");
+		System.out.println();
+		 press = scanner.nextInt();
+		
+		switch (press) {
+		case 1: {
+			System.out.println("Enter the total numbers:");
+			 int totalnumbers = scanner.nextInt();
+			 float average = 0f;
+			 
+				for (int i = 0; i < totalnumbers; i++) {
+					System.out.println("Enter the "+(i+1)+" th value");
+					average += scanner.nextFloat();
+				}
+			 System.out.println("The average is: "+average/totalnumbers);
+			 
+		}
+		break;
+		case 2:{
+			System.out.println("Thanks for using this calc!!");
+			System.exit(0);
+			
+		}
+		default:
+			System.out.println("please enter the right option.....");
+		}
+	} while (press!=2);
+
+
+
+
+
 Q.4
+int a = -303;
+	int b = 34;
+	int c = 909;
+	
+	if (b<a) {
+		if (b<c) {
+			System.out.println("b is small");
+		}
+		else {
+			System.out.println("c is small");
+		}
+	}
+	else if (a<b) {
+		if (a<c) {
+			System.out.println("a is small");
+		}else {
+			System.out.println("c is small");
+		}
+	}
+	
+	else if (c<a) {
+		if (c<b) {
+			System.out.println("c is small");
+		}
+		else {
+			System.out.println("b is small");
+		}
+	}
+	else {
+		System.out.println("all are equals");
+	}
+
+
+
+Q.5
+	 // Integer variable
+        int i = 25;
+
+        // Double variable
+        double pi = 3.14159;
+
+        // String variable
+        String message = "Hello";
+
+        // Display the values of the variables
+        System.out.println("Integer value: " + i);
+        System.out.println("Double Value : " + pi);
+        System.out.println("String: " + message);
