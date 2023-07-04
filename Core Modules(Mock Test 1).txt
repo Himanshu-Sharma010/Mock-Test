@@ -1,0 +1,26 @@
+Q.1 
+	Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter the number: ");
+		 int number = scanner.nextInt();
+		 
+		 if (number<0) {
+			System.out.println("negative");
+		}
+		 else if (number>0) {
+			System.out.println("positive");
+		}else {
+			System.out.println("zero");
+		}
+
+
+Q.2
+ static long nthFibonacci(long n){
+        
+    return (long)((1/Math.sqrt(5))*(Math.pow(((1+Math.sqrt(5))/2),n)-Math.pow(((1-Math.sqrt(5))/2),n)));
+  
+    }
+
+
+
+Q.3
