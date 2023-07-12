@@ -1,0 +1,47 @@
+package in.ineuron.main;
+
+interface Drawable{
+	 void draw();
+}
+
+class Circle implements Drawable{
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("Draw circle");
+	}
+	
+}
+
+class Rectangle implements Drawable{
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		System.out.println("Draw Rectangle");
+	}
+	
+}
+
+
+
+public class Revise2 {
+
+	public static void main(String[] args) {
+	
+		Drawable circle = new Circle();
+		circle.draw();
+		
+		Drawable rectangle = new Rectangle();
+		rectangle.draw();
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}
